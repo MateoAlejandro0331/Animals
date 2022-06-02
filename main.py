@@ -24,7 +24,7 @@ class animals:
     @property
     def species(self):
         return self.__species
-    
+
     @species.setter
     def setspecies(self, value):
         if type(value) is not str:
@@ -57,3 +57,19 @@ class animals:
         if type(sound) is not str:
             raise TypeError("Sound must be a string")
         print(f"My sound is: {sound}")
+
+    """
+    Subclass terrestrial animals
+    """
+    def terrestrial_animal(animals):
+        """
+        this is subclass
+        """
+        def __init__(self, name="", species="", age=0):
+            animals.__init__(self, name="", species="", age=0)
+
+        def move(self, position=""):
+            animals.move(self, position="")
+            if type(position) is not str:
+                raise TypeError("Position must be a string")
+            print(f"Movement: {position}")
