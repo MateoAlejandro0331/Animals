@@ -73,3 +73,4 @@ class animals:
             if type(position) is not str:
                 raise TypeError("Position must be a string")
             print(f"Movement: {position}")
+
