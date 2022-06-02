@@ -58,21 +58,18 @@ class animals:
             raise TypeError("Sound must be a string")
         print(f"My sound is: {sound}")
 
-    """
-    Subclass terrestrial animals
-    """
-    def terrestrial_animal(animals):
-        """
-        this is subclass
-        """
-        def __init__(self, name="", species="", age=0):
-            animals.__init__(self, name="", species="", age=0)
 
-        def move(self, position=""):
-            animals.move(self, position="")
-            if type(position) is not str:
-                raise TypeError("Position must be a string")
-            print(f"Movement: {position}")
+class terrestrial_animal(animals):
+
+    def __init__(self, name="", species="", age=0):
+        super().__init__(self, name, species, age)
+
+    def move(self, position=""):
+        animals.move(self, position="")
+        if type(position) is not str:
+             raise TypeError("Position must be a string")
+        print(f"Movement: {position}")
 
 perro = animals("Bob", "Terrestre", 4)
 perro.show()
+perro.sound("Brrrr")
