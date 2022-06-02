@@ -16,7 +16,7 @@ class animals:
         return self.__name
 
     @name.setter
-    def setname(self, value):
+    def name(self, value):
         if type(value) is not str:
             raise TypeError("Name must be a string")
         self.__name = value
@@ -26,7 +26,7 @@ class animals:
         return self.__species
 
     @species.setter
-    def setspecies(self, value):
+    def species(self, value):
         if type(value) is not str:
             raise TypeError("Species must be a string")
         self.__species = value
@@ -36,7 +36,7 @@ class animals:
         return self.__age
 
     @age.setter
-    def setage(self, value):
+    def age(self, value):
         if type(value) is not int:
             raise TypeError("Age must be an int")
         if value <= 0:
@@ -73,3 +73,6 @@ class animals:
             if type(position) is not str:
                 raise TypeError("Position must be a string")
             print(f"Movement: {position}")
+
+perro = animals("Bob", "Terrestre", 4)
+perro.show()
