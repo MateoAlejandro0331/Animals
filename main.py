@@ -72,4 +72,3 @@ class terrestrial_animal(animals):
 perro = animals("Bob", "Terrestre", 4)
 perro.show()
 perro.sound("Brrrr")
-
