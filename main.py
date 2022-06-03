@@ -72,3 +72,7 @@ class terrestrial_animal(animals):
 perro = animals("Bob", "Terrestre", 4)
 perro.show()
 perro.sound("Brrrr")
+
+fish = animals("nemo", "aquatic", 2)
+fish.show()
+perro.sound("glu glu glu glu")
